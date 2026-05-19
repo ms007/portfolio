@@ -13,10 +13,15 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Portfolio",
   description: "Portfolio · 2026",
+  manifest: "/manifest.json",
 }
 
 export const viewport: Viewport = {
   colorScheme: "dark light",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f5f5f7" },
+    { media: "(prefers-color-scheme: dark)", color: "#09090b" },
+  ],
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
