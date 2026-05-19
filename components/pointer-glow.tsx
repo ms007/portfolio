@@ -1,8 +1,10 @@
 "use client"
 
-import { useEffect } from "react"
+import { useEffect, useRef } from "react"
 
 export function PointerGlow() {
+  const glowRef = useRef<HTMLDivElement | null>(null)
+
   useEffect(() => {
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)")
     if (reduceMotion.matches) return
@@ -13,8 +15,10 @@ export function PointerGlow() {
 
     const flush = () => {
       frame = 0
-      document.body.style.setProperty("--mx", `${nextX}px`)
-      document.body.style.setProperty("--my", `${nextY}px`)
+      const el = glowRef.current
+      if (!el) return
+      el.style.setProperty("--mx", `${nextX}px`)
+      el.style.setProperty("--my", `${nextY}px`)
     }
 
     const onMove = (e: PointerEvent) => {
@@ -30,5 +34,15 @@ export function PointerGlow() {
     }
   }, [])
 
-  return null
+  return (
+    <div
+      ref={glowRef}
+      aria-hidden="true"
+      className="pointer-events-none fixed inset-0 -z-10 hidden lg:block"
+      style={{
+        background:
+          "radial-gradient(600px circle at var(--mx, 50%) var(--my, 0%), var(--color-glow), transparent 70%)",
+      }}
+    />
+  )
 }

@@ -27,7 +27,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="de" className={inter.variable} suppressHydrationWarning>
-      <body className="flex min-h-dvh flex-col">
+      <body className="isolate flex min-h-dvh flex-col">
         <ThemeProvider
           attribute="data-theme"
           defaultTheme="system"

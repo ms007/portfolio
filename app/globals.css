@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+@custom-variant dark ([data-theme="dark"] &);
+@custom-variant group-hocus (&:is(:where(.group):hover *, :where(.group):focus-visible *));
+
 @theme {
   /* Surfaces — dark defaults, light overrides below */
   --color-surface: #09090b;
@@ -40,6 +43,15 @@
 
   /* Motion */
   --ease-out-quad: cubic-bezier(0.23, 1, 0.32, 1);
+
+  /* Elevation — dark gets an inset 1px ring on all sides + deep outer shadow for a glass edge; light overrides below to a soft drop shadow */
+  --shadow-card-hover: inset 0 0 0 1px rgba(148, 163, 184, 0.2), 0 8px 24px rgba(0, 0, 0, 0.25);
+
+  /* Pointer glow tint — kept subtle so it reads as ambient, not a spotlight */
+  --color-glow: rgba(99, 102, 241, 0.07);
+
+  /* Card hover wash — surface base with a touch of indigo, kept close to the page bg */
+  --color-card-hover: #0f0f18;
 }
 
 @media (prefers-color-scheme: light) {
@@ -64,6 +76,12 @@
 
     --color-success: #16a34a;
     --color-danger: #dc2626;
+
+    --shadow-card-hover: 0 2px 6px rgba(79, 82, 224, 0.1);
+
+    --color-glow: rgba(79, 82, 224, 0.06);
+
+    --color-card-hover: #fafbff;
   }
 }
 
@@ -88,6 +106,12 @@
 
   --color-success: #16a34a;
   --color-danger: #dc2626;
+
+  --shadow-card-hover: 0 2px 6px rgba(79, 82, 224, 0.1);
+
+  --color-glow: rgba(79, 82, 224, 0.06);
+
+  --color-card-hover: #fafbff;
 }
 
 html {
@@ -105,11 +129,6 @@ body {
   line-height: 1.5;
   color: var(--color-foreground-muted);
   background: var(--color-surface);
-  background-image: radial-gradient(
-    600px at var(--mx, 50%) var(--my, 0%),
-    rgba(99, 102, 241, 0.07),
-    transparent 70%
-  );
 }
 
 ::selection {
