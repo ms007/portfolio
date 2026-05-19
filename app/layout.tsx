@@ -23,6 +23,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <script dangerouslySetInnerHTML={{ __html: themeBootstrap }} />
       </head>
       <body className="flex min-h-dvh flex-col">
+        <a
+          href="#content"
+          className="bg-accent sr-only rounded-sm px-3 py-2 text-xs text-white focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50"
+        >
+          Zum Inhalt springen
+        </a>
         <PointerGlow />
         {children}
       </body>
