@@ -1,9 +1,8 @@
 import { IconControl } from "@/components/icon-control"
-import { ThemeToggle } from "@/components/theme-toggle"
 
 export function Socials() {
   return (
-    <ul aria-label="Sozial-Profile" className="mt-12 flex list-none items-center gap-4">
+    <ul aria-label="Sozial-Profile" className="flex list-none items-center gap-4">
       <li>
         <IconControl as="a" href="https://github.com/ms007" aria-label="GitHub" title="GitHub">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -45,10 +44,6 @@ export function Socials() {
             <path d="m3 7 9 6 9-6" />
           </svg>
         </IconControl>
-      </li>
-      <li aria-hidden="true" className="bg-border mx-1 h-5 w-px" />
-      <li>
-        <ThemeToggle />
       </li>
     </ul>
   )

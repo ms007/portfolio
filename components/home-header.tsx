@@ -1,5 +1,6 @@
 import { RailNav, type RailNavItem } from "@/components/rail-nav"
 import { Socials } from "@/components/socials"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 const navItems: readonly RailNavItem[] = [
   { id: "about", label: "Über mich" },
@@ -33,7 +34,11 @@ export function HomeHeader() {
         <RailNav items={navItems} aria-label="Inhaltsverzeichnis" className="mt-16" />
       </div>
 
-      <Socials />
+      <div className="mt-12 flex items-center gap-4">
+        <Socials />
+        <span aria-hidden="true" className="bg-border mx-1 h-5 w-px" />
+        <ThemeToggle />
+      </div>
     </header>
   )
 }
