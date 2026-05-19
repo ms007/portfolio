@@ -1,6 +1,15 @@
+import { RailNav, type RailNavItem } from "@/components/rail-nav"
+import { Socials } from "@/components/socials"
+
+const navItems: readonly RailNavItem[] = [
+  { id: "about", label: "Über mich" },
+  { id: "experience", label: "Erfahrung" },
+  { id: "projects", label: "Projekte" },
+]
+
 export function HomeHeader() {
   return (
-    <header className="flex flex-col lg:sticky lg:top-0 lg:-mt-24 lg:max-h-screen lg:w-[48%] lg:justify-between lg:py-24">
+    <header className="flex flex-col lg:sticky lg:top-0 lg:max-h-screen lg:w-[48%] lg:justify-between lg:py-24">
       <div>
         <div className="text-accent mb-6 flex items-center gap-2 font-mono text-[11px] tracking-[0.14em] uppercase">
           <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -18,10 +27,13 @@ export function HomeHeader() {
           <span>Interaction Designer</span>
         </h2>
         <p className="text-foreground-muted mt-4 max-w-[22em] text-base leading-[1.6] text-pretty">
-          Ich baue Software, in der pixel-perfekte UI und tragfähige Architektur kein Gegensatz
-          sind, sondern dasselbe Handwerk — einmal sichtbar, einmal unter der Haube.
+          Pixel-perfekte Oberflächen auf tragfähigem Fundament — beides dasselbe Handwerk.
         </p>
+
+        <RailNav items={navItems} aria-label="Inhaltsverzeichnis" className="mt-16" />
       </div>
+
+      <Socials />
     </header>
   )
 }
