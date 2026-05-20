@@ -49,6 +49,7 @@
 
   /* Pointer glow tint — kept subtle so it reads as ambient, not a spotlight */
   --color-glow: rgba(99, 102, 241, 0.07);
+  --color-glow-blob: rgba(99, 102, 241, 0.08);
 
   /* Card hover wash — surface base with a touch of indigo, kept close to the page bg */
   --color-card-hover: #0f0f18;
@@ -80,6 +81,7 @@
     --shadow-card-hover: 0 2px 6px rgba(79, 82, 224, 0.1);
 
     --color-glow: rgba(79, 82, 224, 0.06);
+    --color-glow-blob: rgba(79, 82, 224, 0.045);
 
     --color-card-hover: #fafbff;
   }
@@ -110,6 +112,7 @@
   --shadow-card-hover: 0 2px 6px rgba(79, 82, 224, 0.1);
 
   --color-glow: rgba(79, 82, 224, 0.06);
+  --color-glow-blob: rgba(79, 82, 224, 0.045);
 
   --color-card-hover: #fafbff;
 }
