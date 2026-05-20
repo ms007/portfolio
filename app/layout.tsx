@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "next-themes"
 import { PointerGlow } from "@/components/pointer-glow"
+import { SiteGrain } from "@/components/site-grain"
 import "./globals.css"
 
 const inter = Inter({
@@ -43,6 +44,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           </a>
           <PointerGlow />
           {children}
+          <SiteGrain />
         </ThemeProvider>
       </body>
     </html>

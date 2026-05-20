@@ -80,10 +80,14 @@ export function ExperienceCard({
       <div
         aria-hidden="true"
         className={cn(
-          "absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md opacity-0",
-          "ease-out-quad transition-[background-color,box-shadow,backdrop-filter,opacity] duration-200",
+          "absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md",
+          "ease-out-quad transition-[background-color,box-shadow] duration-200",
+          // Invisible at rest; subtle fill appears on hover.
+          // Dark uses --color-surface-raised (near-neutral) instead of --color-card-hover,
+          // which has a blue tilt that reads too cool at this opacity.
           "lg:-inset-x-6 lg:block",
-          "lg:group-hocus:bg-card-hover/60 lg:group-hocus:opacity-100 lg:group-hocus:shadow-[var(--shadow-card-hover)] lg:group-hocus:backdrop-blur-md",
+          "lg:group-hocus:bg-surface/70 lg:group-hocus:shadow-[var(--shadow-card-hover)]",
+          "dark:lg:group-hocus:bg-[#14141e]/70",
         )}
       />
       <div
