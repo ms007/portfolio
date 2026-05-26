@@ -1,13 +1,11 @@
 import type { NextConfig } from "next"
 
 const nextConfig: NextConfig = {
-  async headers() {
-    return [
-      {
-        source: "/resume.pdf",
-        headers: [{ key: "X-Robots-Tag", value: "noindex" }],
-      },
-    ]
+  // Static HTML export so the site can be served from GitHub Pages.
+  output: "export",
+  // GitHub Pages can't run Next.js' image optimization server.
+  images: {
+    unoptimized: true,
   },
 }
 
