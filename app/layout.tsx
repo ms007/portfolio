@@ -12,8 +12,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Portfolio · 2026",
+  title: "Marc Seiferle",
+  description: `Portfolio · ${new Date().getFullYear()}`,
   manifest: "/manifest.json",
 }
 
