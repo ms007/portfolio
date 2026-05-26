@@ -1,41 +1,58 @@
+import Image from "next/image"
 import { Card } from "@/components/ui/card"
 import { ArrowUpRight } from "@/components/ui/arrow-up-right"
 import { Pill } from "@/components/ui/pill"
 import { cn } from "@/lib/cn"
 
-type ExperienceCardProps = {
-  dateRange: string
+type ProjectCardProps = {
   title: string
-  company: string
-  href?: string
-  subroles?: readonly string[]
   description: string
+  href?: string
+  /** Optional thumbnail (path under `/public`). Falls back to a placeholder. */
+  image?: string
   tags: readonly string[]
   className?: string
 }
 
-export function ExperienceCard({
-  dateRange,
+export function ProjectCard({
   title,
-  company,
-  href,
-  subroles,
   description,
+  href,
+  image,
   tags,
   className,
-}: ExperienceCardProps) {
+}: ProjectCardProps) {
   return (
     <Card
       href={href}
-      aria-label={href ? `${title} bei ${company}` : undefined}
+      aria-label={href ? title : undefined}
       className={cn("grid grid-cols-1 gap-2 md:grid-cols-[110px_1fr] md:gap-6", className)}
     >
-      <div className="text-foreground-subtle relative z-10 pt-1 font-mono text-[11px] font-semibold tracking-[0.12em] whitespace-nowrap uppercase">
-        {dateRange}
+      <div className="relative z-10 pt-1">
+        <div className="border-border group-hocus:border-border-strong ease-out-quad relative aspect-[16/10] w-full max-w-[200px] overflow-hidden rounded-md border transition-colors duration-200 md:max-w-none">
+          {image ? (
+            <Image
+              src={image}
+              alt=""
+              fill
+              sizes="(min-width: 768px) 110px, 200px"
+              className="object-cover"
+            />
+          ) : (
+            <div
+              aria-hidden="true"
+              className="from-accent-soft to-surface-elevated flex h-full w-full items-center justify-center bg-gradient-to-br"
+            >
+              <span className="text-foreground-subtle font-mono text-[10px] tracking-[0.18em] uppercase">
+                Preview
+              </span>
+            </div>
+          )}
+        </div>
       </div>
       <div className="relative z-10 min-w-0">
         <h3 className="text-foreground group-hocus:text-accent-strong ease-out-quad text-base leading-snug font-semibold tracking-[-0.005em] text-pretty transition-colors duration-200">
-          {title} · {company}
+          {title}
           {href && (
             <>
               {" "}
@@ -43,16 +60,6 @@ export function ExperienceCard({
             </>
           )}
         </h3>
-        {subroles && subroles.length > 0 && (
-          <div className="text-foreground-muted mt-0.5 text-[13px]">
-            {subroles.map((role, i) => (
-              <span key={role}>
-                {i > 0 && <span className="text-foreground-subtle"> · </span>}
-                {role}
-              </span>
-            ))}
-          </div>
-        )}
         <p className="text-foreground-muted mt-2 text-[15px] leading-[1.55] text-pretty">
           {description}
         </p>

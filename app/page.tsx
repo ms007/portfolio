@@ -1,6 +1,7 @@
 import { AboutSection } from "@/components/about-section"
 import { ExperienceSection } from "@/components/experience-section"
 import { HomeHeader } from "@/components/home-header"
+import { ProjectsSection } from "@/components/projects-section"
 
 export default function HomePage() {
   return (
@@ -10,6 +11,7 @@ export default function HomePage() {
         <main id="content" className="min-w-0 flex-1 pt-24 lg:w-[52%] lg:py-24">
           <AboutSection />
           <ExperienceSection />
+          <ProjectsSection />
         </main>
       </div>
     </div>
