@@ -1,21 +1,22 @@
 import { MobileSectionHeader } from "@/components/mobile-section-header"
 import { ProjectCard } from "@/components/project-card"
 
-// Placeholder teasers — replace title/description/href/image with real projects.
 const projects = [
   {
-    title: "Projekt Eins",
-    href: "https://example.com",
+    title: "Mozaicon",
+    href: "https://github.com/ms007/mozaicon",
     description:
-      "Kurzer Teaser, der das Projekt in zwei, drei Sätzen einordnet: Problem, Ansatz und das Ergebnis, auf das du stolz bist.",
-    tags: ["React", "TypeScript", "Tailwind CSS"],
+      "Browser-Editor zum Erstellen und Anpassen von SVG-Icons — modern engineertes Frontend mit Unit- und E2E-Tests, Storybook und CI/CD.",
+    tags: ["React", "TypeScript", "Vite", "Vitest", "Playwright", "Storybook"],
+    image: "/mozaicon.png",
   },
   {
-    title: "Projekt Zwei",
-    href: "https://example.com",
+    title: "MySchoolPro",
+    href: "https://staging.myschoolpro.ch",
     description:
-      "Noch ein Teaser. Hier zeigst du eine andere Facette deiner Arbeit — etwa Backend-Architektur, eine Mobile-App oder ein Design-System.",
-    tags: ["React Native", "Spring Boot", "PostgreSQL"],
+      "Web-Applikation für die Schulverwaltung — vereinfacht Schulleitern die Pensen- und Klassenplanung. Automatisches Deployment über CI/CD auf eigenen VPS Server. Authentication mittels Passwort oder Microsoft Account.",
+    tags: ["React", "TypeScript", "shadcn/ui", "PostgreSQL", "GitHub Actions"],
+    image: "/myschoolpro.png",
   },
 ] as const
 

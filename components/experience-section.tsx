@@ -5,7 +5,7 @@ import { ArrowUpRight } from "@/components/ui/arrow-up-right"
 const experience = [
   {
     dateRange: "2022 — Heute",
-    title: "Coach / Berufsbildner",
+    title: "Berufsbildner",
     company: "ICT Berufsbildungscenter AG",
     href: "https://berufsbildungscenter.ch/",
     description:
@@ -14,12 +14,12 @@ const experience = [
   },
   {
     dateRange: "2019 — 2022",
-    title: "Servant Leader / Fullstack Senior Software Engineer",
+    title: "Team Lead",
     company: "SBB",
     href: "https://company.sbb.ch/de/home.html",
     description:
-      "Als Servant Leader durfte ich die praxisintegrierten Bachelor-Studenten der SBB durch ihren Alltag begleiten. In der TalentFactory haben wir das Projekt Bahnknowhow aufgezogen – inklusive SCRUM-Teams und der passenden Software-Architektur. Die Idee: Lernende digitalisieren zusammen mit ihren Coaches das geballte Wissen der SBB.",
-    tags: ["Angular", "Neo4j", "Spring Boot", "REST", "AWS"],
+      "Als Team Lead durfte ich die praxisintegrierten Bachelor-Studenten der SBB durch ihren Alltag begleiten. In der TalentFactory haben wir das Projekt Bahnknowhow aufgezogen – inklusive SCRUM-Teams und der passenden Software-Architektur. Die Idee: Lernende digitalisieren zusammen mit ihren Coaches das geballte Wissen der SBB.",
+    tags: ["Angular", "Neo4j", "Spring Boot", "REST", "AWS", "D3.js"],
   },
   {
     dateRange: "2016 — 2019",
