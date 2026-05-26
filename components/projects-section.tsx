@@ -8,7 +8,7 @@ const projects = [
     description:
       "Browser-Editor zum Erstellen und Anpassen von SVG-Icons — modern engineertes Frontend mit Unit- und E2E-Tests, Storybook und CI/CD.",
     tags: ["React", "TypeScript", "Vite", "Vitest", "Playwright", "Storybook"],
-    image: "/mozaicon.png",
+    image: "/mozaicon.webp",
   },
   {
     title: "MySchoolPro",
@@ -16,7 +16,7 @@ const projects = [
     description:
       "Web-Applikation für die Schulverwaltung — vereinfacht Schulleitern die Pensen- und Klassenplanung. Automatisches Deployment über CI/CD auf eigenen VPS Server. Authentication mittels Passwort oder Microsoft Account.",
     tags: ["React", "TypeScript", "shadcn/ui", "PostgreSQL", "GitHub Actions"],
-    image: "/myschoolpro.png",
+    image: "/myschoolpro.webp",
   },
 ] as const
 
