@@ -9,7 +9,7 @@ const experience = [
     company: "ICT Berufsbildungscenter AG",
     href: "https://berufsbildungscenter.ch/",
     description:
-      "Begleitung angehender Entwickler von null Vorkenntnissen bis hin zu eigenständigen Fullstack- und Mobile-Projekten. Dazu gehört die komplette Neukonzeption und Modernisierung der Frontend-Module nach aktuellen Industriestandards. Bei komplexen Projektarbeiten steht das praxisnahe Coaching im Vordergrund, um Clean Code und Software-Architektur ab Tag eins greifbar zu vermitteln.",
+      "Als Berufsbildner coache und führe ich jährlich bis zu 14 angehende Software Engineers von den ersten Codezeilen bis zu eigenständigen Fullstack-Projekten. Neben dem täglichen, praxisnahen Mentoring liegt meine Hauptverantwortung darin, unsere Web-Applikationen und Schulungsmodule komplett neu aufzuziehen und modernste Best Practices rund um Clean Code und automatisierte CI/CD-Pipelines zu etablieren. Ein echtes Herzensthema ist für mich das bewusste Management von KI im Entwickleralltag – hier zeige ich den Tech-Talenten von morgen, wie sie Effizienz steigern können, während das solide Software-Handwerk und das eigene kritische Denken das Fundament bleiben.",
     tags: ["React", "React Native", "C#", "Java Spring Boot", "SQL"],
   },
   {
@@ -18,7 +18,7 @@ const experience = [
     company: "SBB",
     href: "https://company.sbb.ch/de/home.html",
     description:
-      "Als Team Lead durfte ich die praxisintegrierten Bachelor-Studenten der SBB durch ihren Alltag begleiten. In der TalentFactory haben wir das Projekt Bahnknowhow aufgezogen – inklusive SCRUM-Teams und der passenden Software-Architektur. Die Idee: Lernende digitalisieren zusammen mit ihren Coaches das geballte Wissen der SBB.",
+      "Als Team Lead habe ich drei interdisziplinäre Scrum-Teams durch die agile Transformation gesteuert. Ein echtes Highlight war für mich, ein kriselndes Entwicklerteam wieder auf Kurs und in den produktiven Modus zu bringen. Neben der personellen Führung der Studierenden hatte ich die technische Gesamtverantwortung für das Projekt „Bahnknowhow“, bei dem wir das geballte Wissen der SBB durch komplexe Datenvisualisierungen digitalisiert haben.",
     tags: ["Angular", "Neo4j", "Spring Boot", "REST", "AWS", "D3.js"],
   },
   {
@@ -27,7 +27,7 @@ const experience = [
     company: "Swisscom",
     href: "https://www.swisscom.ch/",
     description:
-      "Fullstack-Entwicklung mit Fachverantwortung im Frontend. Mit dabei: das Raumbuchungssystem der Swisscom – das alte Tool war bei den 20'000 Mitarbeitenden unbeliebt, also haben wir es in 2-Wochen-Sprints neu gedacht und über kontinuierliches User-Feedback zu einem Tool gemacht, das die Leute tatsächlich gerne benutzt haben.",
+      "Hier war ich als Fullstack-Entwickler mit Fachverantwortung im Enterprise-Umfeld unterwegs. Eines meiner Herzensprojekte war der Aufbau einer zentralen UI-Komponenten-Library, die unternehmensweit genutzt wurde. Ausserdem habe ich die Architektur für das neue Raumbuchungssystem von über 20'000 Mitarbeitenden hochgezogen – das alte Tool war unbeliebt, also haben wir es in agilen Sprints komplett neu gedacht, bis es die Leute tatsächlich gerne genutzt haben.",
     tags: ["React", "Redux", "JavaScript", "C#", "HTML5", "CSS"],
   },
   {
@@ -36,7 +36,7 @@ const experience = [
     company: "Swisscom",
     href: "https://www.swisscom.ch/",
     description:
-      "Fachverantwortung in mittelgrossen Enterprise-Software-Projekten – mein Steckenpferd war eOrder, der Bestell- und Warenkorb für die Enterprise-Kunden der Swisscom. Vom Konzept bis zur letzten Zeile war ich auf der .NET-Seite federführend mit dabei. Das alte Backend war ziemlich träge, also haben wir es mit einer modernen, objektorientierten RavenDB ergänzt – und die User-Experience hat einen richtigen Sprung gemacht.",
+      "Bei dieser Station ging es um die vollständige Ablösung unseres alten Enterprise-Warenkorbs (eOrder). Ich durfte hier von der ersten Konzeption moderner Schnittstellen über die Datenmigration bis zum erfolgreichen Rollout die technische Gesamtverantwortung übernehmen. Der Aufwand hat sich gelohnt: Am Ende konnten wir die User-Experience und die Performance für die Kunden massiv nach vorne bringen.",
     tags: ["C#", "REST", "RavenDB", "jQuery"],
   },
 ] as const

@@ -24,11 +24,12 @@ export function HomeHeader() {
           [Marc Seiferle]
         </h1>
         <h2 className="text-foreground [&>span+span]:before:text-foreground-subtle mt-2 text-[19px] font-medium tracking-[-0.01em] [&>span+span]:before:content-['_·_']">
-          <span>Fullstack Developer</span>
-          <span>Interaction Designer</span>
+          <span>Senior Frontend Engineer</span>
+          <span>Tech Lead</span>
         </h2>
-        <p className="text-foreground-muted mt-4 max-w-[22em] text-base leading-[1.6] text-pretty">
-          Pixel-perfekte Oberflächen auf tragfähigem Fundament — beides dasselbe Handwerk.
+        <p className="text-foreground-muted mt-4 max-w-[28em] text-base leading-[1.6] text-pretty">
+          Pixel-perfekte UIs auf nachhaltiger Architektur.
+          <br /> Ich baue die Brücke zwischen Design und Tech.
         </p>
 
         <RailNav items={navItems} aria-label="Inhaltsverzeichnis" className="mt-16" />
