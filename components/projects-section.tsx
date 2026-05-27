@@ -18,6 +18,14 @@ const projects = [
     tags: ["React", "TypeScript", "shadcn/ui", "PostgreSQL", "GitHub Actions"],
     image: "/myschoolpro.webp",
   },
+  {
+    title: "react-retro-digit",
+    href: "/projects/react-retro-digit",
+    description:
+      "Open-Source NPM-Paket: SVG-basierte Seven-Segment-Display-Komponente für React mit flexibler Farb- und Grössensteuerung — als wiederverwendbare Library mit Vite gebaut und veröffentlicht.",
+    tags: ["React", "TypeScript", "Vite"],
+    image: "/react-retro-digit.webp",
+  },
 ] as const
 
 export function ProjectsSection() {

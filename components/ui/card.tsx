@@ -1,10 +1,10 @@
 "use client"
 
+import Link from "next/link"
 import { type PointerEvent, type ReactNode, useEffect, useRef } from "react"
 import { cn } from "@/lib/cn"
 
 type CardProps = {
-  /** When set, the whole card becomes an external link (opens in a new tab). */
   href?: string
   /** Accessible name, applied to the anchor when `href` is set. */
   "aria-label"?: string
@@ -106,6 +106,14 @@ export function Card({ href, "aria-label": ariaLabel, className, children }: Car
   )
 
   if (href) {
+    if (href.startsWith("/")) {
+      return (
+        <Link href={href} className={wrapperClasses} aria-label={ariaLabel} {...pointerHandlers}>
+          {wash}
+          {children}
+        </Link>
+      )
+    }
     return (
       <a
         href={href}

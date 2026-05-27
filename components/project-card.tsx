@@ -53,7 +53,8 @@ export function ProjectCard({
       <div className="relative z-10 min-w-0">
         <h3 className="text-foreground group-hocus:text-accent-strong ease-out-quad text-base leading-snug font-semibold tracking-[-0.005em] text-pretty transition-colors duration-200">
           {title}
-          {href && (
+          {/* ↗ marks an external/new-tab link; internal routes navigate via <Link> in the same tab. */}
+          {href && !href.startsWith("/") && (
             <>
               {" "}
               <ArrowUpRight />

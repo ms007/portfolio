@@ -40,11 +40,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# UI-Kit components not yet in use — kept locally, excluded from commits
-/components/ui/slider.tsx
-/components/ui/segmented-control.tsx
-/components/ui/layer-item.tsx
-/components/ui/swatch.tsx
-
 # Sample page and design system
 /sample
