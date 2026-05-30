@@ -7,9 +7,18 @@ import { Demo } from "./demo"
 import { InstallCommand } from "./install-command"
 
 export const metadata: Metadata = {
-  title: "react-retro-digit · Marc Seiferle",
+  title: "react-retro-digit",
   description:
     "SVG-basierte Seven-Segment-Display-Komponente für React mit flexibler Farb- und Grössensteuerung.",
+  alternates: {
+    canonical: "/projects/react-retro-digit",
+  },
+  openGraph: {
+    title: "react-retro-digit · Marc Seiferle",
+    description:
+      "SVG-basierte Seven-Segment-Display-Komponente für React mit flexibler Farb- und Grössensteuerung.",
+    url: "/projects/react-retro-digit",
+  },
 }
 
 const tags = ["React", "TypeScript", "Vite"] as const

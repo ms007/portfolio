@@ -10,5 +10,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/resume.pdf",
     },
+    sitemap: "https://marcseiferle.com/sitemap.xml",
+    host: "https://marcseiferle.com",
   }
 }
