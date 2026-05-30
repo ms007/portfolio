@@ -84,7 +84,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="de" className={inter.variable} suppressHydrationWarning>
-      <body className="isolate flex min-h-dvh flex-col">
+      <body className="isolate min-h-dvh">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
